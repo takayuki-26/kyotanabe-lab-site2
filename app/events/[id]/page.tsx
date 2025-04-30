@@ -252,6 +252,31 @@ const events = {
     requirements: "特になし",
     category: "シンポジウム",
   },
+  "robotics-seminar": {
+    title: "次世代ロボティクスセミナー",
+    date: "2024年11月15日",
+    time: "14:00 - 17:00",
+    location: "LUVO Kyotanabe Lab セミナールーム",
+    description:
+      "次世代ロボティクスの最��動向と応用事例について学ぶセミナーです。AI、IoT、ビッグデータなどの技術を活用したロボット開発の現状と未来について、研究者とエンジニアが講演とデモンストレーションを行います。",
+    agenda: [
+      "14:00 - 14:15 オープニング",
+      "14:15 - 15:00 基調講演「AIとロボティクスの融合」",
+      "15:00 - 15:45 事例紹介「ロボットによる自動化の最前線」",
+      "15:45 - 16:00 休憩",
+      "16:00 - 16:45 パネルディスカッション「ロボティクスの倫理と課題」",
+      "16:45 - 17:00 Q&A・クロージング",
+    ],
+    speakers: [
+      "山田 太郎（ロボティクス研究所 所長）",
+      "中村 美咲（大学 ロボット工学部門 責任者）",
+      "加藤 一郎（ロボット開発会社 研究開発部門）",
+    ],
+    capacity: "40名",
+    fee: "一般: 7,000円、学生: 3,000円、企業: 12,000円",
+    requirements: "特になし",
+    category: "セミナー",
+  },
 }
 
 export default function EventPage({ params }: { params: { id: string } }) {
@@ -276,10 +301,90 @@ export default function EventPage({ params }: { params: { id: string } }) {
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-8">
           <div className="relative h-[300px] rounded-xl overflow-hidden bg-blue-900/20 backdrop-blur-sm border border-blue-500/30">
-            {/* イベント画像がここに入ります */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-              <div className="text-white text-opacity-80 text-xl font-medium">[イベント画像: {event.title}]</div>
-            </div>
+            {/* イベント画像 */}
+            {params.id === "ai-medical-symposium" ? (
+              // AIと医療の未来シンポジウムの画像
+              <div className="absolute inset-0">
+                <img
+                  src="/ai-medical-symposium.png"
+                  alt="AIと医療の未来シンポジウム"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : params.id === "robotics-seminar" ? (
+              // 次世代ロボティクスセミナーの画像
+              <div className="absolute inset-0">
+                <img
+                  src="/robotics-seminar.png"
+                  alt="次世代ロボティクスセミナー"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              // その他のイベントには関連する画像を表示
+              <div className="absolute inset-0">
+                {params.id === "ai-workshop" && (
+                  <img
+                    src="/ai-workshop-classroom.png"
+                    alt="AI活用ワークショップ"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "rag-seminar" && (
+                  <img
+                    src="/rag-seminar-discussion.png"
+                    alt="RAGシステム構築セミナー"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "ai-business-cases" && (
+                  <img
+                    src="/ai-case-study-presentation.png"
+                    alt="AI×ビジネス活用事例発表会"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "student-hackathon" && (
+                  <img
+                    src="/ai-hackathon-collaboration.png"
+                    alt="学生向けAIハッカソン"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "ai-ethics" && (
+                  <img
+                    src="/ai-ethics-lecture.png"
+                    alt="AI倫理とガバナンス講座"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "ai-programming" && (
+                  <img
+                    src="/ai-coding-classroom.png"
+                    alt="AI×プログラミング入門講座"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "industry-meetup" && (
+                  <img
+                    src="/industry-academia-connect.png"
+                    alt="産学連携ミートアップ"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {params.id === "ai-art-exhibition" && (
+                  <img src="/digital-canvas-gallery.png" alt="AI×アート展示会" className="w-full h-full object-cover" />
+                )}
+                {params.id === "future-tech-symposium" && (
+                  <img
+                    src="/placeholder.svg?height=300&width=800&query=futuristic technology symposium with speakers and audience in a high-tech venue"
+                    alt="未来テックシンポジウム"
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
+            )}
+
             {/* 装飾要素 */}
             <div
               className="absolute top-4 right-4 w-12 h-12 bg-blue-500/20 rounded-full backdrop-blur-sm border border-blue-500/30"

@@ -6,7 +6,7 @@ import ParticlesBackground from "@/components/particles-background"
 import WaveAnimation from "@/components/wave-animation"
 
 export default function EventsPage() {
-  // イベントデータ（実際の実装ではデータベースやAPIから取得）
+  // イベ���トデータ（実際の実装ではデータベースやAPIから取得）
   const events = [
     {
       id: "ai-art-exhibition",
