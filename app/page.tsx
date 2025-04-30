@@ -112,7 +112,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 3.5, duration: 0.8 }}
             >
-              仕事は、してもいい
+              AIで、未来をつくる
             </motion.h1>
 
             <motion.p
