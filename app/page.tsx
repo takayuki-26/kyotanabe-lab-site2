@@ -112,7 +112,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 3.5, duration: 0.8 }}
             >
-              仕事は、してもいい
+              <h1>AIで、未来をつくる</h1>
             </motion.h1>
 
             <motion.p
@@ -224,7 +224,14 @@ export default function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation direction="left" delay={0.4}>
-                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl"></div>
+
+                  {/* コンセプト画像がここに入ります */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                    <div className="text-slate-600 text-opacity-80 text-xl font-medium">
+                      [コンセプト画像: 学生エンジニアたちが協力して作業している様子]
+                    </div>
+
                   {/* コンセプト画像 */}
                   <div className="absolute inset-0">
                     <img
@@ -332,7 +339,7 @@ export default function Home() {
 
             <div className="grid gap-10 lg:grid-cols-2">
               <ScrollAnimation direction="right" delay={0.2}>
-                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100">
+                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100"></div>
                   <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/30 transition-all duration-300 shadow-md">
                     <Database className="h-8 w-8 text-blue-600" />
                   </div>
@@ -345,6 +352,13 @@ export default function Home() {
                       <span className="inline-block">スムーズにアクセスする手法を研究・共有しています。</span>
                     </p>
                     <div className="relative h-[250px] rounded-lg overflow-hidden shadow-lg transform group-hover:scale-[1.02] transition-all duration-300 border border-blue-100">
+
+                      {/* 活動画像1がここに入ります */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 flex items-center justify-center">
+                        <div className="text-slate-600 text-opacity-80 text-lg font-medium">
+                          [活動画像: RAGシステムの実験風景]
+                        </div>
+
                       {/* 活動画像1: RAGシステムの実験風景 */}
                       <div className="absolute inset-0">
                         <img
@@ -352,6 +366,7 @@ export default function Home() {
                           alt="RAGシステムの実験風景"
                           className="w-full h-full object-cover"
                         />
+ 502506c (初回コミット)
                       </div>
                     </div>
                   </div>
@@ -359,7 +374,7 @@ export default function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation direction="left" delay={0.4}>
-                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100">
+                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100"></div>
                   <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-purple-500/30 transition-all duration-300 shadow-md">
                     <Workflow className="h-8 w-8 text-purple-600" />
                   </div>
@@ -372,6 +387,13 @@ export default function Home() {
                       <span className="inline-block">実験プロジェクトを通じて、独自のベストプラクティスを模索中。</span>
                     </p>
                     <div className="relative h-[250px] rounded-lg overflow-hidden shadow-lg transform group-hover:scale-[1.02] transition-all duration-300 border border-purple-100">
+
+                      {/* 活動画像2がここに入ります */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 flex items-center justify-center">
+                        <div className="text-slate-600 text-opacity-80 text-lg font-medium">
+                          [活動画像: ワークフロー設計のホワイトボード]
+                        </div>
+
                       {/* 活動画像2: ワークフロー設計のホワイトボード */}
                       <div className="absolute inset-0">
                         <img
@@ -379,6 +401,7 @@ export default function Home() {
                           alt="ワークフロー設計のホワイトボード"
                           className="w-full h-full object-cover"
                         />
+
                       </div>
                     </div>
                   </div>
@@ -386,7 +409,7 @@ export default function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation direction="right" delay={0.6}>
-                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-cyan-100">
+                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-cyan-100"></div>
                   <div className="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-cyan-500/30 transition-all duration-300 shadow-md">
                     <Code className="h-8 w-8 text-cyan-600" />
                   </div>
@@ -399,6 +422,13 @@ export default function Home() {
                       <span className="inline-block">アイデア創出の幅を広げる取り組みを行っています。</span>
                     </p>
                     <div className="relative h-[250px] rounded-lg overflow-hidden shadow-lg transform group-hover:scale-[1.02] transition-all duration-300 border border-cyan-100">
+
+                      {/* 活動画像3がここに入ります */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 flex items-center justify-center">
+                        <div className="text-slate-600 text-opacity-80 text-lg font-medium">
+                          [活動画像: API連携の図解とチーム作業]
+                        </div>
+
                       {/* 活動画像3: API連携の図解とチーム作業 */}
                       <div className="absolute inset-0">
                         <img
@@ -406,6 +436,7 @@ export default function Home() {
                           alt="API連携の図解とチーム作業"
                           className="w-full h-full object-cover"
                         />
+ 
                       </div>
                     </div>
                   </div>
@@ -413,7 +444,7 @@ export default function Home() {
               </ScrollAnimation>
 
               <ScrollAnimation direction="left" delay={0.8}>
-                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100">
+                <div className="flex flex-col md:flex-row gap-6 items-start group bg-white/60 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100"></div>
                   <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-500/30 transition-all duration-300 shadow-md">
                     <Cpu className="h-8 w-8 text-green-600" />
                   </div>
@@ -426,6 +457,13 @@ export default function Home() {
                       <span className="inline-block">人間の創造性を最大限に引き出す方法を探求しています。</span>
                     </p>
                     <div className="relative h-[250px] rounded-lg overflow-hidden shadow-lg transform group-hover:scale-[1.02] transition-all duration-300 border border-green-100">
+
+                      {/* 活動画像4がここに入ります */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-teal-500/10 flex items-center justify-center">
+                        <div className="text-slate-600 text-opacity-80 text-lg font-medium">
+                          [活動画像: AI駆動開発の実践風景]
+                        </div>
+
                       {/* 活動画像4: AI駆動開発の実践風景 */}
                       <div className="absolute inset-0">
                         <img
@@ -433,6 +471,7 @@ export default function Home() {
                           alt="AI駆動開発の実践風景"
                           className="w-full h-full object-cover"
                         />
+
                       </div>
                     </div>
                   </div>
@@ -451,6 +490,13 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <ScrollAnimation direction="right">
                 <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
+</div>
+                  {/* コミュニティ画像がここに入ります */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center">
+                    <div className="text-slate-600 text-opacity-80 text-xl font-medium">
+                      [コミュニティ画像: 同志社大学生を中心としたチームの集合写真]
+                    </div>
+
                   {/* コミュニティ画像 */}
                   <div className="absolute inset-0">
                     <img
@@ -458,6 +504,7 @@ export default function Home() {
                       alt="同志社大学生を中心としたチームの集合写真"
                       className="w-full h-full object-cover"
                     />
+
                   </div>
 
                   {/* 装飾要素 */}
@@ -814,7 +861,8 @@ export default function Home() {
                           <Link
                             href="/events/ai-medical-symposium"
                             className="text-blue-400 hover:text-blue-300 hover:underline"
-                          >
+
+>
                             詳細
                           </Link>
                         </div>
@@ -849,8 +897,15 @@ export default function Home() {
 
             <div className="grid gap-8 lg:grid-cols-2">
               <ScrollAnimation direction="right">
-                <div>
+                <div></div>
                   <div className="relative h-[400px] rounded-xl overflow-hidden mb-6 shadow-xl">
+
+                    {/* 地図画像がここに入ります */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-green-500/10 flex items-center justify-center">
+                      <div className="text-slate-600 text-opacity-80 text-xl font-medium">
+                        [地図: LUVO Kyotanabe Labの所在地]
+                      </div>
+
                     {/* 地図画像 */}
                     <div className="absolute inset-0">
                       <img
@@ -858,6 +913,7 @@ export default function Home() {
                         alt="同志社大学京田辺キャンパスの航空写真"
                         className="w-full h-full object-cover"
                       />
+
                     </div>
 
                     {/* 装飾要素 */}
@@ -873,12 +929,15 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="w-full bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/30 text-blue-700"
+
+
                     onClick={() =>
                       window.open(
                         "https://www.google.com/maps/place/Doshisha+University+Kyotanabe+Campus/@34.8022248,135.7686247,15z/data=!4m6!3m5!1s0x600122e7d0a8e2c7:0x3e4e7bd9f1a9c4f9!8m2!3d34.8022248!4d135.7686247!16s%2Fm%2F0_1c0c9?entry=ttu",
                         "_blank",
                       )
                     }
+
                   >
                     Google マップで見る
                   </Button>
@@ -1124,6 +1183,13 @@ export default function Home() {
 
                 <ScrollAnimation direction="left" delay={0.7}>
                   <div className="relative h-[200px] rounded-xl overflow-hidden shadow-xl">
+</div>
+                    {/* お問い合わせ画像がここに入ります */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                      <div className="text-white text-opacity-80 text-xl font-medium">
+                        [お問い合わせ画像: LUVO Kyotanabe Labの外観]
+                      </div>
+
                     {/* お問い合わせ画像 */}
                     <div className="absolute inset-0">
                       <img
@@ -1131,6 +1197,7 @@ export default function Home() {
                         alt="LUVO Kyotanabe Labの外観"
                         className="w-full h-full object-cover"
                       />
+
                     </div>
 
                     {/* 装飾要素 */}
