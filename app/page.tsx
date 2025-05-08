@@ -1,5 +1,6 @@
 "use client"
 
+import Head from "next/head"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -52,6 +53,15 @@ export default function Home() {
   }, [])
 
   return (
+    <>
+      <Head>
+        <title>LUVO Kyotanabe Lab | 京田辺のAI拠点</title>
+        <meta
+          name="description"
+          content="京田辺市にあるLUVOのAI拠点。学生主導でAI時代の技術を探求し、創造的な働き方を実現する開発環境を提供しています。"
+        />
+        <meta name="google-site-verification" content="ciApfigEyA-OgA-l-pUT8d6kD2vNzpe-jy2IoFPwoNI" />
+      </Head>  
     <div className="flex min-h-screen flex-col">
       <SplashScreen />
 
@@ -1298,5 +1308,7 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   )
 }
+
